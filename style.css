@@ -5,12 +5,12 @@ body {
   font-family: Arial, sans-serif;
 }
 
-nav a {
+/* nav a {
   background-color: pink;
   padding: 10px;
   text-decoration: none;
   color: black;
-}
+} */
 
 .my-container {
   background-color: #f5f5f5;
@@ -18,6 +18,9 @@ nav a {
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  border-left-style: solid;
+  border-color:#ab0d64;
+  border-width: 4px;
 }
 
 .parent-container {
@@ -30,4 +33,9 @@ nav a {
 
 h1 {
   font-family: Poppins;
+}
+
+a {
+  text-decoration: none;
+  color: #ab0d64
 }
