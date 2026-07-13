@@ -1,0 +1,83 @@
+body {
+  background-color: #d48ab4f5;
+  font-family: Arial, sans-serif;
+}
+
+.plans {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    min-height: 100vh; 
+    padding: 40px;
+}
+
+.card {
+    background-color: #f5f5f5;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-left-style: solid;
+    border-color:#ab0d64;
+    border-width: 4px;  
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+button {
+    border: none;
+    background-color: #ab0d64;
+    color:#f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+} 
+
+.plans .card:nth-child(2) {
+    position: relative;
+    background-color: #f9e0ec;
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.plans .card:nth-child(2)::before {
+    content: "Most Popular";
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ab0d64;
+    color: #f5f5f5;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 4px 12px;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15)
+}
+
+.plans .card:nth-child(2){
+    transform: scale(1.1);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.25);
+}
+
+button:hover {
+    background-color: #8a0c4f;
+}
+
+@media (max-width: 768px) {
+    .plans {
+        flex-direction: column;
+        padding: 40px;
+    } 
+    .card {
+        max-width: 350px;
+    }
+}

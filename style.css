@@ -35,6 +35,12 @@ h1 {
   font-family: Poppins;
 }
 
+section p,nav {
+  margin-bottom: 8px;
+  margin-top: 8px;
+  padding: 10px;
+}
+
 a {
   text-decoration: none;
   color: #ab0d64
